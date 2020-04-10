@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbb1470-ed72-46e5-83f6-1ff6430423ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examkhojo_backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/examkhojo_backend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/course/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usermodule/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/usermodule/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,6 +22,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -69,7 +71,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583588405522</updated>
-      <workItem from="1583588524161" duration="1449000" />
+      <workItem from="1583588524161" duration="1781000" />
+      <workItem from="1583732199598" duration="158000" />
+      <workItem from="1585630239417" duration="3135000" />
+      <workItem from="1585671248149" duration="2289000" />
+      <workItem from="1585722736311" duration="28000" />
+      <workItem from="1586493617268" duration="2396000" />
     </task>
     <servers />
   </component>
@@ -81,7 +88,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

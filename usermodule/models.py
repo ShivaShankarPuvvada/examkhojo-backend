@@ -8,3 +8,4 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, required=True)
     dob = models.DateField()
     display_pic = models.ImageField(upload_to='user/dp/')
+    mobile_number = models.CharField(max_length=20)
