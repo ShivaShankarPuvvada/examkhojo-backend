@@ -48,7 +48,7 @@ class Course(models.Model):
     duration = models.IntegerField()
     eligibility = models.IntegerField(choices=BasicEligibilityChoices.choices)
     exam = models.CharField(max_length=3, choices=ExaminationType.choices)
-    average_course_fee = models.DecimalField()
+    average_course_fee = models.DecimalField(max_digits=20, decimal_places=5)
     about = models.TextField()
 
 

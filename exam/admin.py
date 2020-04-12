@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from exam.models import Exam
+
+admin.site.site_header = 'ExamKhojo'
+
+admin.site.register(Exam)

@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'rolepermissions',
     'rest_framework',
 
-    'usermodule',
     'college',
     'course',
     'exam'

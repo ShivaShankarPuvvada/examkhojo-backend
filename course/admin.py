@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from course.models import *
+
+
+admin.site.site_header = 'ExamKhojo'
+
+admin.site.register(Course)
+admin.site.register(CourseJob)
+admin.site.register(Job)
