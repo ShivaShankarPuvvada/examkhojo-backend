@@ -11,18 +11,24 @@ def get_colleges(request):
     if search_string:
         college_list = College.objects.filter(
             full_name__icontains=search_string
-        )
+        ).order_by('full_name')
     else:
-        college_list = College.objects.all()
+        college_list = College.objects.all().order_by('full_name')
 
-    paginator = Paginator(college_list, 10)
+    paginator = Paginator(college_list, 9)
     try:
         colleges = paginator.page(page)
     except PageNotAnInteger:
         colleges = paginator.page(1)
     except EmptyPage:
         colleges = paginator.page(paginator.num_pages)
-    return render(request, 'dist/colleges.html', {'colleges': colleges})
+    return render(
+        request,
+        'pages/colleges.html',
+        {
+            'colleges': colleges
+        }
+    )
 
 
 def get_single_college(request, college_slug):

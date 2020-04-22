@@ -2,182 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbb1470-ed72-46e5-83f6-1ff6430423ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/app.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/account-settings.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/account-settings.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/company.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/company.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/dashboard.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/forgot-password.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/forgot-password.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/index.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/individual-page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/individual-page.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/library.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/library.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/listpages.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/css/pages/listpages.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-extrabold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-extrabold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-extrabold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-extrabold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-extrabold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-medium.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-semibold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-semibold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-semibold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-semibold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/fonts/publicsans-semibold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/bg-dark - Copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/bg-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Arrow Down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Avatar Male _ Neutral.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Avatar _ Female.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Bar Graph.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Bookmark _ Save.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Cancel _ Close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Chevron Back _ Chevron Left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Chevron Down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Chevron Front _ Chevron Right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Chevron Up.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Copy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Dislike _ Thumbs Down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Down Arrow Circled.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Download From _ Download alternate.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Download.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Edit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Eye Invisible.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Eye Visibility.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Facebook F Circular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Facebook line Logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Folder _ Browse.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Gear _ Settings.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Google G Icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Hamburger Menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Heart _ Love.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Home.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Instagram line Logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Left Arrow Circled.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Like _ Thumbs Up.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Link.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Linkedin line Logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Location Pin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Logout Alternate.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Logout.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Mail Envelope.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Menu _ Nine Dots.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/More _ Menu _ Vertical Dots.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Next _ Forward.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Pad Lock _ Open Lock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Paper Plane _ Send.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Phone Call.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Pie Chart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Pinterest line logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Plus _ Add _ Save Circled.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Refresh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Reply _ Previous.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Right Arrow Circled.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Search _ Magnifying Glass.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Settings _ Slider _ Menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Share.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Shopping Bag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Shopping Cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Speaker _ Sound.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Tag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Tick _ Checked Circled.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Touch _ Hand Pointing.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Trash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Twitter line Logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Up Arrow Circled.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Upload-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Upload.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/icons/Youtube line Logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/logo-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/logo-main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/og_img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/images/sample.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/js/all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/assets/js/all.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/dist/bouncer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/dist/bouncer.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/dist/bouncer.polyfills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/dist/bouncer.polyfills.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/src/copy/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/src/js/bouncer/_classList.polyfill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/src/js/bouncer/_closest.polyfill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/src/js/bouncer/_customEvent.polyfill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/src/js/bouncer/_matches.polyfill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/node_modules/formbouncerjs/src/js/bouncer/bouncer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/college/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-extrabold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-extrabold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-extrabold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-extrabold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-semibold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-semibold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-semibold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/fonts/publicsans-semibold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout/public.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/colleges.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/college/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/college/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/college/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/college/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/course/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examkhojo_backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/examkhojo_backend/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examkhojo_backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/examkhojo_backend/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout/public.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/public.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/colleges.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/colleges.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -265,6 +97,16 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -286,7 +128,8 @@
       <workItem from="1587010849573" duration="3304000" />
       <workItem from="1587302881423" duration="1720000" />
       <workItem from="1587357925501" duration="54000" />
-      <workItem from="1587490660437" duration="3754000" />
+      <workItem from="1587490660437" duration="4786000" />
+      <workItem from="1587525951659" duration="3731000" />
     </task>
     <servers />
   </component>

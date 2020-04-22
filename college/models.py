@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 
 from exam.models import Exam
@@ -24,10 +25,17 @@ class College(models.Model):
     city = models.CharField(max_length=50)
     state = models.CharField(max_length=50)
     brochure = models.FileField(upload_to='college/brochure/')
+    image = models.ImageField(upload_to='college/image/')
     ownership = models.IntegerField(choices=OwnershipChoices.choices)
     college_type = models.IntegerField(choices=InstitutionType.choices)
-    date_of_establishment = models.DateField()
-    about = models.TextField()
+    date_of_establishment = models.DateField(null=True)
+    slug = models.SlugField(max_length=50)
+    about = models.TextField(null=True)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.full_name)
+        super(College, self).save(*args, **kwargs)
 
 
 class EntranceExam(models.Model):
