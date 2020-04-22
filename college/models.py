@@ -26,6 +26,7 @@ class College(models.Model):
     state = models.CharField(max_length=50)
     brochure = models.FileField(upload_to='college/brochure/')
     image = models.ImageField(upload_to='college/image/')
+    logo = models.ImageField(upload_to='college/logo/')
     ownership = models.IntegerField(choices=OwnershipChoices.choices)
     college_type = models.IntegerField(choices=InstitutionType.choices)
     date_of_establishment = models.DateField(null=True)

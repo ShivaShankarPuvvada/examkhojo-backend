@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 
 
@@ -50,6 +51,12 @@ class Course(models.Model):
     exam = models.CharField(max_length=3, choices=ExaminationType.choices)
     average_course_fee = models.DecimalField(max_digits=20, decimal_places=5)
     about = models.TextField()
+    slug = models.SlugField(max_length=50)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.full_name)
+        super(Course, self).save(*args, **kwargs)
 
 
 class Job(models.Model):

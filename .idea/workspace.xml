@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbb1470-ed72-46e5-83f6-1ff6430423ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/college/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/college/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/college/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/college/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/hero.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout/public.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/public.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/colleges.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/colleges.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -129,7 +122,7 @@
       <workItem from="1587302881423" duration="1720000" />
       <workItem from="1587357925501" duration="54000" />
       <workItem from="1587490660437" duration="4786000" />
-      <workItem from="1587525951659" duration="3731000" />
+      <workItem from="1587525951659" duration="3786000" />
     </task>
     <servers />
   </component>
