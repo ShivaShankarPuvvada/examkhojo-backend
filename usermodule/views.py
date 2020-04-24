@@ -12,6 +12,10 @@ def register_view(request):
     password = request.POST.get('password')
     email = request.POST.get('email')
     username = email
+    if User.objects.filter(
+        email=email
+    ).count() > 0:
+        return render(request, '', {'error': 'Account already exists !'})
     User.objects.create_user(username=username, password=password)
     user = authenticate(username=username, password=password)
     Profile.objects.create(user=user, full_name=name)
