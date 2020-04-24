@@ -34,4 +34,4 @@ def get_colleges(request):
 def get_single_college(request, college_slug):
     """Get single college."""
     college = College.objects.filter(slug=college_slug)
-    return render(request, 'dist/individual-college.html', {'college': college})
+    return render(request, 'pages/individual-college.html', {'college': college})

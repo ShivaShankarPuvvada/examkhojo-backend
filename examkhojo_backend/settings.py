@@ -79,6 +79,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'examkhojo_backend.urls'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # During development only
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -97,6 +99,7 @@ TEMPLATES = [
 ]
 
 AUTHENTICATION_BACKENDS = (
+    'examkhojo_backend.usermodule.authentication.EmailOrUsernameModelBackend',
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 )
