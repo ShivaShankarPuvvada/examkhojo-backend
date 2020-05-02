@@ -14,9 +14,14 @@
               </div>
                 {% endfor %}
             </div>
-            {% if colleges|length != 0 %}
-            <button class="button-outline load-more">Load More</button>
+            {% if colleges.has_next %}
+                <a href="?page={{ colleges.next_page_number }}"><button class="button-outline load-more">Load More</button></a>
             {% endif %}
           </div>
     </section>
+    <script>
+        var infinite = new Waypoint.Infinite({
+          element: $('.cards-group')[0]
+        });
+    </script>
 {% endblock %}

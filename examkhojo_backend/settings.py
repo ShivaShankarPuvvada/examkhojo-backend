@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.sites',
     'django.contrib.staticfiles',
-    'usermodule.apps.UsermoduleConfig',
 
     'rolepermissions',
     'rest_framework',
@@ -48,7 +47,8 @@ INSTALLED_APPS = [
 
     'college',
     'course',
-    'exam'
+    'exam',
+    'usermodule'
 ]
 
 SITE_ID = 1
@@ -99,7 +99,7 @@ TEMPLATES = [
 ]
 
 AUTHENTICATION_BACKENDS = (
-    'examkhojo_backend.usermodule.authentication.EmailOrUsernameModelBackend',
+    'usermodule.authentication.EmailOrUsernameModelBackend',
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 )
