@@ -28,6 +28,7 @@ class College(models.Model):
     image = models.ImageField(upload_to='college/image/')
     logo = models.ImageField(upload_to='college/logo/')
     ownership = models.IntegerField(choices=OwnershipChoices.choices)
+    approval = models.IntegerField(choices=OwnershipChoices.choices)
     college_type = models.IntegerField(choices=InstitutionType.choices)
     date_of_establishment = models.DateField(null=True)
     slug = models.SlugField(max_length=50)
@@ -67,6 +68,12 @@ class Stream(models.Model):
     name = models.CharField(max_length=60)
     degree_type = models.CharField(max_length=3, choices=DegreeType.choices)
     degree = models.ForeignKey(Degree, on_delete=models.CASCADE, null=True)
+
+
+class StreamCollegeMap(models.Model):
+    """Map college with stream."""
+    stream = models.ForeignKey(Stream, on_delete=models.CASCADE)
+    college = models.ForeignKey(College, on_delete=models.CASCADE)
 
 
 class OfficialContact(models.Model):

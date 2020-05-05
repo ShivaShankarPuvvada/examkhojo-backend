@@ -1,0 +1,199 @@
+{% extends "layout/public.html" %}
+{% block title %} {{ exam.abbreviated_name }} {% endblock %}
+{% block page_name %}
+    <li class="link-01"> <a href="/exams">Exams</a></li>
+    <li class="link-01">{{ exam.full_name }}</li>
+{% endblock %}
+{% block content %}
+    <section id="individual-page-content">
+      <div class="container">
+        <div class="main-content">
+          <div class="main-content-card quick-facts">
+            <h4 class="sub-header-01 quick-facts_header">Quick Facts</h4>
+            <div class="quick-facts_content">
+              <div class="quick-facts_content-item"><span class="label-01">Exam Level</span>
+                <p class="paragraph-01">{{ exam.exam_level }}</p>
+              </div>
+              <div class="quick-facts_content-item"><span class="label-01">Conducting Body</span>
+                <p class="paragraph-01">{{ exam.conducting_body_abbreviated_name }}</p>
+              </div>
+              <div class="quick-facts_content-item"><span class="label-01">Official Website</span>
+                <p class="paragraph-01"><a href="{{ college.official_website }}">{{ college.official_website }}</a></p>
+              </div>
+              <div class="quick-facts_content-item"><span class="label-01">Tentative Date</span>
+                <p class="paragraph-01">{{ college.tentative_date }}</p>
+              </div>
+              <div class="quick-facts_content-item"><span class="label-01">Basic Eligibility</span>
+                <p class="paragraph-01">{{ college.eligibility }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-content-cta">
+            <h5 class="sub-header-02">Interested in taking this Exam?</h5>
+            <button class="icon-button-primary">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.4896 20.4896C25.1701 15.8091 25.1701 8.19094 20.4896 3.5104C15.8091 -1.17013 8.19094 -1.17013 3.5104 3.5104C-1.17013 8.19094 -1.17013 15.8091 3.5104 20.4896C8.19094 25.1701 15.8091 25.1701 20.4896 20.4896ZM4.3574 4.3574C8.57283 0.141983 15.4272 0.141983 19.6426 4.3574C23.858 8.57283 23.858 15.4272 19.6426 19.6426C15.4272 23.858 8.57283 23.858 4.3574 19.6426C0.141983 15.4272 0.146879 8.57283 4.3574 4.3574Z"></path>
+                <path d="M11.9999 16.4945C12.1664 16.4945 12.3132 16.426 12.4258 16.3183C12.5335 16.2106 12.6021 16.0588 12.6021 15.8923V12.5974H15.8971C16.0635 12.5974 16.2104 12.5288 16.323 12.4211C16.4307 12.3134 16.4993 12.1616 16.4993 11.9952C16.4993 11.6622 16.23 11.3929 15.902 11.3978H12.607V8.10287C12.607 7.76994 12.3377 7.50066 12.0097 7.50556C11.6768 7.50556 11.4075 7.77484 11.4124 8.10287V11.3978H8.11739C7.78447 11.3978 7.51519 11.6671 7.52009 11.9952C7.52009 12.3281 7.78936 12.5974 8.11739 12.5925H11.4124V15.8874C11.3977 16.2253 11.667 16.4945 11.9999 16.4945Z"></path>
+              </svg>Bookmark
+            </button>
+          </div>
+          <div class="main-content-card">
+            <h4 class="sub-header-01 main-content-card-header">About {{ exam.abbreviated_name }}</h4>
+            <div class="main-content-card-content">
+              <p>
+                {{ exam.about }}
+              </p>
+            </div>
+            <button class="icon-link main-content-card-button">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5651 14.38L12.5651 19.36C12.4051 19.52 12.2051 19.6 12.0051 19.6C11.8051 19.6 11.6051 19.52 11.4451 19.36L6.44507 14.38C6.12507 14.06 6.12507 13.56 6.44507 13.24C6.76507 12.92 7.26508 12.92 7.58508 13.24L11.2251 16.86V5.20002C11.2251 4.76002 11.5851 4.40002 12.0251 4.40002C12.4651 4.40002 12.8251 4.76002 12.8251 5.20002V16.88L16.4651 13.26C16.7851 12.94 17.2851 12.94 17.6051 13.26C17.8851 13.56 17.8851 14.06 17.5651 14.38Z"></path>
+              </svg><span class="link-primary_lined">Read More</span>
+            </button>
+          </div>
+          <div class="main-content-cta">
+            <h5 class="sub-header-02">Get all the official details</h5>
+            <button class="icon-button-primary">
+              <svg class="icon" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M23.351 11.488C22.969 11.488 22.6634 11.7875 22.6634 12.1619V18.2914C22.6634 19.9586 21.278 21.3113 19.5819 21.3113H4.49528C2.79409 21.3113 1.41379 19.9536 1.41379 18.2914V12.062C1.41379 11.6877 1.10818 11.3882 0.72618 11.3882C0.344177 11.3882 0.0385742 11.6877 0.0385742 12.062V18.2914C0.0385742 20.7023 2.04027 22.659 4.49528 22.659H19.5819C22.042 22.659 24.0386 20.6974 24.0386 18.2914V12.1619C24.0386 11.7925 23.733 11.488 23.351 11.488Z"></path>
+                  <path d="M11.5547 17.3081C11.6872 17.4379 11.8654 17.5078 12.0386 17.5078C12.2118 17.5078 12.39 17.4429 12.5225 17.3081L16.8926 13.0254C17.1625 12.7608 17.1625 12.3366 16.8926 12.072C16.6226 11.8075 16.1897 11.8075 15.9197 12.072L12.7262 15.2067V1.53494C12.7262 1.16057 12.4206 0.861084 12.0386 0.861084C11.6566 0.861084 11.351 1.16057 11.351 1.53494V15.2067L8.15235 12.072C7.8824 11.8075 7.44946 11.8075 7.17951 12.072C6.90956 12.3366 6.90956 12.7608 7.17951 13.0254L11.5547 17.3081Z"></path>
+                </g>
+                <defs>
+                  <clippath id="clip0">
+                    <path d="M0.0385742 0H24.0386V23.52H0.0385742V0Z"></path>
+                  </clippath>
+                </defs>
+              </svg>Download Brochure
+            </button>
+          </div>
+          <div class="main-content-card">
+            <h4 class="sub-header-01 main-content-card-header">About {{ exam.abbreviated_name }}</h4>
+            <div class="main-content-card-content">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Particulars</th>
+                    <th>Overview</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Examination Name</td>
+                    <td>{{ exam.full_name }}</td>
+                  </tr>
+                  <tr>
+                    <td>Commonly Known As</td>
+                    <td>{{ exam.abbreviated_name }}</td>
+                  </tr>
+                  <tr>
+                    <td>Conducting Body</td>
+                    <td>{{ exam.conducting_body_full_name }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="icon-link main-content-card-button" data-variable="more">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5651 14.38L12.5651 19.36C12.4051 19.52 12.2051 19.6 12.0051 19.6C11.8051 19.6 11.6051 19.52 11.4451 19.36L6.44507 14.38C6.12507 14.06 6.12507 13.56 6.44507 13.24C6.76507 12.92 7.26508 12.92 7.58508 13.24L11.2251 16.86V5.20002C11.2251 4.76002 11.5851 4.40002 12.0251 4.40002C12.4651 4.40002 12.8251 4.76002 12.8251 5.20002V16.88L16.4651 13.26C16.7851 12.94 17.2851 12.94 17.6051 13.26C17.8851 13.56 17.8851 14.06 17.5651 14.38Z"></path>
+              </svg><span class="link-primary_lined">Read More</span>
+            </button>
+          </div>
+          <div class="main-content-card">
+            <h4 class="sub-header-01 main-content-card-header">Important Details</h4>
+            <div class="main-content-card-content">
+              <table class="more-than-two-column">
+                <thead>
+                  <tr>
+                    <th>Serial No</th>
+                    <th>Events</th>
+                    <th>Important Dates</th>
+                    <th>Secondary Dates</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {% for date in dates %}
+                  <tr>
+                    <td data-label="Serial No :">{{ forloop.counter }}</td>
+                    <td data-label="Events :">{{ date.event }}/td>
+                    <td data-label="Important Dates :">{{ date.primary_date }}</td>
+                    <td data-label="Secondary Dates :">{{ date.secondary_date }}</td>
+                  </tr>
+                {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <button class="icon-link main-content-card-button" data-variable="more">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5651 14.38L12.5651 19.36C12.4051 19.52 12.2051 19.6 12.0051 19.6C11.8051 19.6 11.6051 19.52 11.4451 19.36L6.44507 14.38C6.12507 14.06 6.12507 13.56 6.44507 13.24C6.76507 12.92 7.26508 12.92 7.58508 13.24L11.2251 16.86V5.20002C11.2251 4.76002 11.5851 4.40002 12.0251 4.40002C12.4651 4.40002 12.8251 4.76002 12.8251 5.20002V16.88L16.4651 13.26C16.7851 12.94 17.2851 12.94 17.6051 13.26C17.8851 13.56 17.8851 14.06 17.5651 14.38Z"></path>
+              </svg><span class="link-primary_lined">Read More</span>
+            </button>
+          </div>
+          <div class="main-content-card">
+            <h4 class="sub-header-01 main-content-card-header">{{ exam.abbreviated_name }} Cutoff</h4>
+            <div class="main-content-card-content">
+              <p class="paragraph-01">
+                {{ exam.cutoff_details }}
+              </p>
+            </div>
+            <button class="icon-link main-content-card-button" data-variable="more">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5651 14.38L12.5651 19.36C12.4051 19.52 12.2051 19.6 12.0051 19.6C11.8051 19.6 11.6051 19.52 11.4451 19.36L6.44507 14.38C6.12507 14.06 6.12507 13.56 6.44507 13.24C6.76507 12.92 7.26508 12.92 7.58508 13.24L11.2251 16.86V5.20002C11.2251 4.76002 11.5851 4.40002 12.0251 4.40002C12.4651 4.40002 12.8251 4.76002 12.8251 5.20002V16.88L16.4651 13.26C16.7851 12.94 17.2851 12.94 17.6051 13.26C17.8851 13.56 17.8851 14.06 17.5651 14.38Z"></path>
+              </svg><span class="link-primary_lined">Read More</span>
+            </button>
+          </div>
+          <div class="main-content-cta">
+            <h5 class="sub-header-02">Interested in taking this Exam?</h5>
+            <button class="icon-button-primary">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.4896 20.4896C25.1701 15.8091 25.1701 8.19094 20.4896 3.5104C15.8091 -1.17013 8.19094 -1.17013 3.5104 3.5104C-1.17013 8.19094 -1.17013 15.8091 3.5104 20.4896C8.19094 25.1701 15.8091 25.1701 20.4896 20.4896ZM4.3574 4.3574C8.57283 0.141983 15.4272 0.141983 19.6426 4.3574C23.858 8.57283 23.858 15.4272 19.6426 19.6426C15.4272 23.858 8.57283 23.858 4.3574 19.6426C0.141983 15.4272 0.146879 8.57283 4.3574 4.3574Z"></path>
+                <path d="M11.9999 16.4945C12.1664 16.4945 12.3132 16.426 12.4258 16.3183C12.5335 16.2106 12.6021 16.0588 12.6021 15.8923V12.5974H15.8971C16.0635 12.5974 16.2104 12.5288 16.323 12.4211C16.4307 12.3134 16.4993 12.1616 16.4993 11.9952C16.4993 11.6622 16.23 11.3929 15.902 11.3978H12.607V8.10287C12.607 7.76994 12.3377 7.50066 12.0097 7.50556C11.6768 7.50556 11.4075 7.77484 11.4124 8.10287V11.3978H8.11739C7.78447 11.3978 7.51519 11.6671 7.52009 11.9952C7.52009 12.3281 7.78936 12.5974 8.11739 12.5925H11.4124V15.8874C11.3977 16.2253 11.667 16.4945 11.9999 16.4945Z"></path>
+              </svg>Bookmark
+            </button>
+          </div>
+          <div class="main-content-card">
+            <h4 class="sub-header-01 main-content-card-header">JEE Main Cutoff of 3 Previous Year</h4>
+            <div class="main-content-card-content">
+              <table class="more-than-two-column">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>2019</th>
+                    <th>2018</th>
+                    <th>2017</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {% for cutoff in cutoffs %}
+                  <tr>
+                    <td data-label="Category :">{{ cutoff.category }}</td>
+                    <td data-label="{{ cutoff.cutoff_year_1.year }} :">{{ cutoff.cutoff_marks_1 }}</td>
+                    <td data-label="{{ cutoff.cutoff_year_2.year }} :">{{ cutoff.cutoff_marks_2 }}</td>
+                    <td data-label="{{ cutoff.cutoff_year_3.year }} :">{{ cutoff.cutoff_marks_3 }}</td>
+                  </tr>
+                {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <button class="icon-link main-content-card-button" data-variable="more">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5651 14.38L12.5651 19.36C12.4051 19.52 12.2051 19.6 12.0051 19.6C11.8051 19.6 11.6051 19.52 11.4451 19.36L6.44507 14.38C6.12507 14.06 6.12507 13.56 6.44507 13.24C6.76507 12.92 7.26508 12.92 7.58508 13.24L11.2251 16.86V5.20002C11.2251 4.76002 11.5851 4.40002 12.0251 4.40002C12.4651 4.40002 12.8251 4.76002 12.8251 5.20002V16.88L16.4651 13.26C16.7851 12.94 17.2851 12.94 17.6051 13.26C17.8851 13.56 17.8851 14.06 17.5651 14.38Z"></path>
+              </svg><span class="link-primary_lined">Read More</span>
+            </button>
+          </div>
+        </div>
+        <aside class="card_sidebar">
+          <div class="card_sidebar-suggestion">
+            <h4 class="sub-header-01">Popular Exams</h4><a class="paragraph-01" href="individual-college.html">JEE Advanced</a><a class="paragraph-01" href="individual-college.html">NID DAT</a><a class="paragraph-01" href="individual-college.html">UGC NET</a><a class="paragraph-01" href="individual-college.html">GATE</a><a class="paragraph-01" href="individual-college.html">CAT</a><a class="paragraph-01" href="individual-college.html">NEET UG</a>
+          </div>
+          <div class="search-bar_small">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M23.7901 22.3016L17.9577 16.5907C19.5222 14.8295 20.4694 12.5316 20.4694 10.0201C20.4694 4.49157 15.877 0 10.2362 0C4.59007 0 0.00292969 4.49678 0.00292969 10.0201C0.00292969 15.5433 4.59539 20.0401 10.2362 20.0401C12.8012 20.0401 15.1479 19.1126 16.9466 17.5807L22.779 23.2916C22.9173 23.4271 23.1036 23.5 23.2845 23.5C23.4655 23.5 23.6517 23.4323 23.7901 23.2916C24.0668 23.0206 24.0668 22.5725 23.7901 22.3016ZM1.43442 10.0201C1.43442 5.26796 5.38297 1.40687 10.2309 1.40687C15.0841 1.40687 19.0273 5.27317 19.0273 10.0201C19.0273 14.767 15.0841 18.6385 10.2309 18.6385C5.38297 18.6385 1.43442 14.7722 1.43442 10.0201Z"></path>
+              </g>
+            </svg>
+            <h6 class="label-02">Search Items</h6>
+          </div>
+        </aside>
+      </div>
+    </section>
+{% endblock %}

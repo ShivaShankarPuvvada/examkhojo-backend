@@ -1,0 +1,26 @@
+{% extends "layout/public.html" %}
+{% block title %} Colleges {% endblock %}
+{% block page_name %}<li class="link-01">Colleges</li>{% endblock %}
+{% block content %}
+    <section id="cards-section">
+      <div class="container">
+        <div class="cards-group">
+          {% for exam in exams %}
+          <div class="card_exam">
+            <div class="card_exam-details"><a class="sub-header-02" href="individual-exam.html">JEE Mains</a>
+              <div class="card_exam-details_secondary"><span class="label-01">IIT Bombay</span><span class="label-01">UG</span><span class="label-01">B.Tech &amp; B.Arch</span></div><a class="link-primary_lined" href="#download" download="download">Brochure</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      {% if exams.has_next %}
+          <a href="?page={{ exams.next_page_number }}"><button class="button-outline load-more">Load More</button></a>
+      {% endif %}
+      </div>
+    </section>
+    <script>
+        var infinite = new Waypoint.Infinite({
+          element: $('.cards-group')[0]
+        });
+    </script>
+{% endblock %}

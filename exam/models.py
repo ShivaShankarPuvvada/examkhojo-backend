@@ -41,3 +41,35 @@ class Exam(models.Model):
 
     def __str__(self):
         return self.full_name
+
+
+class ExamDate(models.Model):
+    """Models for exam date."""
+
+    exam = models.ForeignKey(Exam, on_delete=models.CASCADE)
+    event = models.CharField(max_length=255, null=True)
+    primary_date = models.DateField()
+    secondary_date = models.DateField(null=True)
+
+
+class ExamCutoff(models.Model):
+    """Exam cutoff."""
+
+    class CutoffCategory(models.Choices):
+        """Types of cutoff caste level."""
+        GENERAL = 'G'
+        SCHEDULE_CASTE = 'SC'
+        SCHEDULE_TRIBE = 'ST'
+        OTHER_BACKWARD_CLASS = 'OBC'
+        PWD = 'PWD'
+        COMMON = 'CM'
+        OTHER = 'OT'
+
+    exam = models.ForeignKey(Exam, on_delete=models.CASCADE)
+    category = models.CharField(max_length=5, choices=CutoffCategory.choices)
+    cutoff_marks_1 = models.FloatField(max_length=20)
+    cutoff_year_1 = models.DateField()
+    cutoff_marks_2 = models.FloatField(max_length=20, null=True)
+    cutoff_year_2 = models.DateField(null=True)
+    cutoff_marks_3 = models.FloatField(max_length=20, null=True)
+    cutoff_year_3 = models.DateField(null=True)
