@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbb1470-ed72-46e5-83f6-1ff6430423ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/pages/exams.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/individual-exam.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/college/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/college/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/college/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/college/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/individual-college.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/individual-college.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/college/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/college/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/course/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usermodule/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/usermodule/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +152,9 @@
       <workItem from="1588410586026" duration="2295000" />
       <workItem from="1588479283784" duration="3878000" />
       <workItem from="1588569283914" duration="1217000" />
-      <workItem from="1588646040633" duration="3917000" />
+      <workItem from="1588646040633" duration="4871000" />
+      <workItem from="1588730863423" duration="107000" />
+      <workItem from="1588767861233" duration="347000" />
     </task>
     <servers />
   </component>
