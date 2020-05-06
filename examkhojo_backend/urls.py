@@ -16,7 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from examkhojo_backend.views import get_home
+
 urlpatterns = [
+    path('', get_home, name='index'),
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('college/', include('college.urls')),
