@@ -58,38 +58,12 @@
             <div class="main-content-card-content">
               <table>
                 <tbody>
+                {% for subject in course.syllabus|split:"," %}
                   <tr>
-                    <td>Applied Mathematics</td>
-                    <td>Digital Circuit Design</td>
+                    <td>{{ subject }}</td>
+{#                    <td>Digital Circuit Design</td>#}
                   </tr>
-                  <tr>
-                    <td>Operating Systems</td>
-                    <td>Graphics and Multimedia</td>
-                  </tr>
-                  <tr>
-                    <td>Communication Systems</td>
-                    <td>Computer Networks</td>
-                  </tr>
-                  <tr>
-                    <td>Object Oriented Programming with Java</td>
-                    <td>Design and Analysis of Algorithms</td>
-                  </tr>
-                  <tr>
-                    <td>Database Management System</td>
-                    <td>Digital Circuite Design</td>
-                  </tr>
-                  <tr>
-                    <td>Artificial Interlligence</td>
-                    <td>Environmental Science</td>
-                  </tr>
-                  <tr>
-                    <td>Cloud Computing</td>
-                    <td>Compiler Design</td>
-                  </tr>
-                  <tr>
-                    <td>Formal Language & Automata Theory</td>
-                    <td>Cryptography and Blockchain</td>
-                  </tr>
+                {% endfor %}
                 </tbody>
               </table>
             </div>
