@@ -53,6 +53,7 @@ class Course(models.Model):
     about = models.TextField()
     syllabus_csv = models.TextField() #CSV field
     slug = models.SlugField(max_length=50)
+    is_top = models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):
         if not self.slug:

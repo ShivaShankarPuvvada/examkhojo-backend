@@ -33,6 +33,7 @@ class College(models.Model):
     date_of_establishment = models.DateField(null=True)
     slug = models.SlugField(max_length=50)
     about = models.TextField(null=True)
+    is_top = models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):
         if not self.slug:
