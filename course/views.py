@@ -1,7 +1,7 @@
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render
 
-from course.models import Course
+from course.models import Course, CourseJob
 
 
 def get_courses(request):
@@ -28,4 +28,14 @@ def get_courses(request):
 def get_single_course(request, course_slug):
     """Get single course."""
     course = Course.objects.filter(slug=course_slug)
-    return render(request, 'dist/individual-course.html', {'course': course})
+    jobs = CourseJob.objects.filter(
+        course=course
+    )
+    return render(
+        request,
+        'pages/individual-course.html',
+        {
+            'course': course,
+            'jobs': jobs
+        }
+    )

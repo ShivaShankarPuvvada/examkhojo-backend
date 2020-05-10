@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbb1470-ed72-46e5-83f6-1ff6430423ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/pages/individual-course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/examkhojo_backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/examkhojo_backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/course/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/course/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/individual-exam.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/individual-exam.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,16 +53,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/pages" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/pages" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -150,7 +157,9 @@
       <workItem from="1588569283914" duration="1217000" />
       <workItem from="1588646040633" duration="4871000" />
       <workItem from="1588730863423" duration="107000" />
-      <workItem from="1588767861233" duration="1478000" />
+      <workItem from="1588767861233" duration="1937000" />
+      <workItem from="1589048551212" duration="861000" />
+      <workItem from="1589079942576" duration="1985000" />
     </task>
     <servers />
   </component>

@@ -51,6 +51,7 @@ class Course(models.Model):
     exam = models.CharField(max_length=3, choices=ExaminationType.choices)
     average_course_fee = models.DecimalField(max_digits=20, decimal_places=5)
     about = models.TextField()
+    syllabus_csv = models.TextField() #CSV field
     slug = models.SlugField(max_length=50)
 
     def save(self, *args, **kwargs):
