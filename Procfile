@@ -1,0 +1,1 @@
+web: gunicorn examkhojo-backend.wsgi --log-file -
