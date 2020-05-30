@@ -1,1 +1,1 @@
-web: gunicorn examkhojo-backend.wsgi:application --log-file -
+web: gunicorn examkhojo-backend.wsgi:application --log-file - --preload --workers 1
