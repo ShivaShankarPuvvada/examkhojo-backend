@@ -12,10 +12,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import dj_database_url
 import django_heroku
 import os
-import environ
-
-env = environ.Env()
-env.read_env(env.str('ENV_PATH', '.env'))
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -120,11 +116,11 @@ DATABASES = {
     'default': {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('DB_NAME') or 'examkhojo',
-        'USER': env('DB_USER') or 'chayan007',
-        'PASSWORD': env('DB_PASSWORD'),
-        'HOST': env('DB_HOST') or 'localhost',
-        'PORT': env('DB_PORT') or 5432,
+        'NAME': os.environ['DB_NAME'] or 'examkhojo',
+        'USER': os.environ['DB_USER'] or 'chayan007',
+        'PASSWORD': os.environ['DB_PASSWORD'],
+        'HOST': os.environ['DB_HOST'] or 'localhost',
+        'PORT': os.environ['DB_PORT'] or 5432,
 
     }
 }
@@ -173,7 +169,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),
 )
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
