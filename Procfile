@@ -1,1 +1,1 @@
-web: gunicorn examkhojo-backend.wsgi --log-file -
+web: gunicorn examkhojo_backend.wsgi --log-file -
