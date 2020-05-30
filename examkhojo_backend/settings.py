@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
+import dj_database_url
 import django_heroku
 import os
 import environ
@@ -114,7 +115,7 @@ WSGI_APPLICATION = 'examkhojo_backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
+db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES = {
     'default': {
 
@@ -171,6 +172,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),
 )
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL = '/media/'
+
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Activate Django-Heroku.
 django_heroku.settings(locals())
