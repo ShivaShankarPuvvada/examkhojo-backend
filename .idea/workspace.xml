@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbb1470-ed72-46e5-83f6-1ff6430423ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.envrc" beforeDir="false" afterPath="$PROJECT_DIR$/.envrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examkhojo_backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/examkhojo_backend/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout/public.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/public.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/colleges.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/colleges.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,6 +164,7 @@
       <workItem from="1590839480104" duration="5203000" />
       <workItem from="1590895151058" duration="46000" />
       <workItem from="1591185147218" duration="220000" />
+      <workItem from="1591325213085" duration="979000" />
     </task>
     <servers />
   </component>

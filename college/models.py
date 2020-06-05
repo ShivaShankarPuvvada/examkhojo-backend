@@ -28,7 +28,7 @@ class College(models.Model):
     image = models.ImageField(upload_to='college/image/')
     logo = models.ImageField(upload_to='college/logo/')
     ownership = models.IntegerField(choices=OwnershipChoices.choices)
-    approval = models.IntegerField(choices=OwnershipChoices.choices)
+    approval = models.CharField(max_length=100)
     college_type = models.IntegerField(choices=InstitutionType.choices)
     date_of_establishment = models.DateField(null=True)
     slug = models.SlugField(max_length=50)

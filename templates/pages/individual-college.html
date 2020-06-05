@@ -12,13 +12,13 @@
             <h4 class="sub-header-01 quick-facts_header">Quick Facts</h4>
             <div class="quick-facts_content">
               <div class="quick-facts_content-item"><span class="label-01">Ownership</span>
-                <p class="paragraph-01">{{ college.ownership }} </p>
+                <p class="paragraph-01">{{ college.get_ownership_display }} </p>
               </div>
               <div class="quick-facts_content-item"><span class="label-01">Approval</span>
                 <p class="paragraph-01">{{ college.approval }}</p>
               </div>
               <div class="quick-facts_content-item"><span class="label-01">Type of Institute</span>
-                <p class="paragraph-01">{{ college.college_type }}</p>
+                <p class="paragraph-01">{{ college.get_college_type_display }}</p>
               </div>
               <div class="quick-facts_content-item"><span class="label-01">Established</span>
                 <p class="paragraph-01">{{ college.date_of_establishment }}</p>

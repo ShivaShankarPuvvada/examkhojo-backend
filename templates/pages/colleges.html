@@ -8,8 +8,8 @@
                 {% for college in colleges %}
                 <div class="card_college">
                 <div class="card_college-img"><img src="{{ college.image.url }}" alt="College Logo"/></div>
-                <div class="card_college-details"><a class="sub-header-02" href="/college/">IIT Bomabay</a>
-                  <div class="card_college-details_secondary"><span class="label-01">Bombay</span><span class="label-01">AICTE</span><span class="label-01">University</span></div><a class="link-primary_lined" href="#downloadIITBombay" download="download">Brochure</a>
+                <div class="card_college-details"><a class="sub-header-02" href="/college/">{{ college.abbreviated_name }}</a>
+                  <div class="card_college-details_secondary"><span class="label-01">{{ college.city }}</span><span class="label-01">AICTE</span><span class="label-01">University</span></div><a class="link-primary_lined" href="#downloadIITBombay" download="download">Brochure</a>
                 </div>
               </div>
                 {% endfor %}
