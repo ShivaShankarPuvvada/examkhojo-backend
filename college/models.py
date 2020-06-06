@@ -24,16 +24,19 @@ class College(models.Model):
     abbreviated_name = models.CharField(max_length=50)
     city = models.CharField(max_length=50)
     state = models.CharField(max_length=50)
-    brochure = models.FileField(upload_to='college/brochure/')
-    image = models.ImageField(upload_to='college/image/')
-    logo = models.ImageField(upload_to='college/logo/')
+    brochure = models.FileField(upload_to='college/brochure/', null=True)
+    image = models.ImageField(upload_to='college/image/', null=True)
+    logo = models.ImageField(upload_to='college/logo/', null=True)
     ownership = models.IntegerField(choices=OwnershipChoices.choices)
-    approval = models.CharField(max_length=100)
+    approval = models.CharField(max_length=100, null=True)
     college_type = models.IntegerField(choices=InstitutionType.choices)
     date_of_establishment = models.DateField(null=True)
     slug = models.SlugField(max_length=50)
     about = models.TextField(null=True)
     is_top = models.BooleanField(default=False)
+    quick_facts = models.TextField(null=True)
+    admission_process = models.TextField(null=True)
+    placements = models.TextField(null=True)
 
     def save(self, *args, **kwargs):
         if not self.slug:

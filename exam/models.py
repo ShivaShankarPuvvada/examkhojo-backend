@@ -34,6 +34,9 @@ class Exam(models.Model):
     cutoff_details = models.TextField()
     slug = models.SlugField(max_length=50)
     is_top = models.BooleanField(default=False)
+    quick_facts = models.TextField(null=True)
+    exam_pattern = models.TextField(null=True)
+    admit_card = models.CharField(max_length=200, null=True)
 
     def save(self, *args, **kwargs):
         if not self.slug:
