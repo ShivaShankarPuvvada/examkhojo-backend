@@ -23,6 +23,8 @@ class Exam(models.Model):
 
     full_name = models.CharField(max_length=200)
     abbreviated_name = models.CharField(max_length=200)
+    meta = models.TextField()
+    keywords = models.TextField()
     conducting_body_full_name = models.CharField(max_length=200)
     conducting_body_abbreviated_name = models.CharField(max_length=200)
     official_website = models.CharField(max_length=200)
