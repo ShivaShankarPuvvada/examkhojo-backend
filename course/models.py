@@ -54,6 +54,7 @@ class Course(models.Model):
     average_course_fee = models.DecimalField(max_digits=20, decimal_places=5)
     about = models.TextField()
     syllabus_csv = models.TextField() #CSV field
+    top_companies = models.TextField() #CSV field
     slug = models.SlugField(max_length=50)
     is_top = models.BooleanField(default=False)
     quick_facts = models.TextField(null=True)
