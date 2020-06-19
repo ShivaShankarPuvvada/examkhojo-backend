@@ -22,8 +22,8 @@ class College(models.Model):
 
     full_name = models.CharField(max_length=255)
     abbreviated_name = models.CharField(max_length=50)
-    meta = models.TextField()
-    keywords = models.TextField()
+    meta = models.TextField(null=True)
+    keywords = models.TextField(null=True)
     city = models.CharField(max_length=50)
     state = models.CharField(max_length=50)
     brochure = models.FileField(upload_to='college/brochure/', null=True)

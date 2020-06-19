@@ -44,8 +44,8 @@ class Course(models.Model):
 
     full_name = models.CharField(max_length=200)
     abbreviated_name = models.CharField(max_length=200)
-    meta = models.TextField()
-    keywords = models.TextField()
+    meta = models.TextField(null=True)
+    keywords = models.TextField(null=True)
     stream = models.IntegerField(choices=StreamChoices.choices)
     level = models.CharField(max_length=5, choices=LevelType.choices)
     duration = models.IntegerField()
