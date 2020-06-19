@@ -57,6 +57,7 @@ class Course(models.Model):
     slug = models.SlugField(max_length=50)
     is_top = models.BooleanField(default=False)
     quick_facts = models.TextField(null=True)
+    range = models.TextField(null=True)
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -73,5 +74,20 @@ class Job(models.Model):
 class CourseJob(models.Model):
     """Course job mapping."""
 
-    degree = models.ForeignKey(Course, on_delete=models.CASCADE)
-    job = models.ForeignKey(Job, on_delete=models.CASCADE)
+    degree = models.ForeignKey(Course, on_delete=models.PROTECT)
+    job = models.ForeignKey(Job, on_delete=models.PROTECT)
+    course = models.ForeignKey(Course, on_delete=models.PROTECT)
+
+
+class FAQCourse(models.Model):
+    """FAQ model for every course."""
+
+    question = models.TextField()
+    answers = models.TextField()
+
+
+class FAQLinkCourse(models.Model):
+    """Link FAQ to courses."""
+
+    faq = models.ForeignKey(FAQCourse, on_delete=models.PROTECT)
+    course = models.ForeignKey(Course, on_delete=models.PROTECT)
