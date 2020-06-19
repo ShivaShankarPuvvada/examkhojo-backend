@@ -48,13 +48,13 @@ class Course(models.Model):
     keywords = models.TextField(null=True)
     stream = models.IntegerField(choices=StreamChoices.choices)
     level = models.CharField(max_length=5, choices=LevelType.choices)
-    duration = models.IntegerField()
+    duration = models.IntegerField(null=True)
     eligibility = models.IntegerField(choices=BasicEligibilityChoices.choices)
     exam = models.CharField(max_length=3, choices=ExaminationType.choices)
     average_course_fee = models.DecimalField(max_digits=20, decimal_places=5)
-    about = models.TextField()
-    syllabus_csv = models.TextField() #CSV field
-    top_companies = models.TextField() #CSV field
+    about = models.TextField(null=True)
+    syllabus_csv = models.TextField(null=True) #CSV field
+    top_companies = models.TextField(null=True) #CSV field
     slug = models.SlugField(max_length=50)
     is_top = models.BooleanField(default=False)
     quick_facts = models.TextField(null=True)
@@ -77,7 +77,6 @@ class CourseJob(models.Model):
 
     degree = models.ForeignKey(Course, on_delete=models.PROTECT)
     job = models.ForeignKey(Job, on_delete=models.PROTECT)
-    course = models.ForeignKey(Course, on_delete=models.PROTECT)
 
 
 class FAQCourse(models.Model):
