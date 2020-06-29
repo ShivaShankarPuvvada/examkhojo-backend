@@ -20,22 +20,22 @@ class College(models.Model):
         DIPLOMA_COLLEGE = 1,
         VOCATIONAL_TRAINING = 2
 
-    full_name = models.CharField(max_length=255)
-    abbreviated_name = models.CharField(max_length=50)
+    full_name = models.CharField(null=True, max_length=255)
+    abbreviated_name = models.CharField(null=True, max_length=50)
     meta = models.TextField(null=True)
     keywords = models.TextField(null=True)
-    city = models.CharField(max_length=50)
-    state = models.CharField(max_length=50)
-    brochure = models.FileField(upload_to='college/brochure/', null=True)
-    image = models.ImageField(upload_to='college/image/', null=True)
-    logo = models.ImageField(upload_to='college/logo/', null=True)
-    ownership = models.IntegerField(choices=OwnershipChoices.choices)
-    approval = models.CharField(max_length=100, null=True)
-    college_type = models.IntegerField(choices=InstitutionType.choices)
+    city = models.CharField(null=True, max_length=50)
+    state = models.CharField(null=True, max_length=50)
+    brochure = models.FileField(null=True, upload_to='college/brochure/')
+    image = models.ImageField(null=True, upload_to='college/image/')
+    logo = models.ImageField(null=True, upload_to='college/logo/')
+    ownership = models.IntegerField(null=True, choices=OwnershipChoices.choices)
+    approval = models.CharField(null=True, max_length=100)
+    college_type = models.IntegerField(null=True, choices=InstitutionType.choices)
     date_of_establishment = models.DateField(null=True)
-    slug = models.SlugField(max_length=50)
+    slug = models.SlugField(null=True, max_length=50)
     about = models.TextField(null=True)
-    is_top = models.BooleanField(default=False)
+    is_top = models.BooleanField(null=True, default=False)
     quick_facts = models.TextField(null=True)
     admission_process = models.TextField(null=True)
     placements = models.TextField(null=True)
@@ -56,8 +56,8 @@ class EntranceExam(models.Model):
 class Degree(models.Model):
     """Model of degrees."""
 
-    full_name = models.CharField(max_length=255)
-    abbreviated_name = models.CharField(max_length=50)
+    full_name = models.CharField(null=True, max_length=255)
+    abbreviated_name = models.CharField(null=True, max_length=50)
 
 
 class Stream(models.Model):
@@ -71,8 +71,8 @@ class Stream(models.Model):
         DOCTORATE = 'PHD'
         OTHERS = 'OT'
 
-    name = models.CharField(max_length=60)
-    degree_type = models.CharField(max_length=3, choices=DegreeType.choices)
+    name = models.CharField(null=True, max_length=60)
+    degree_type = models.CharField(null=True, max_length=3, choices=DegreeType.choices)
     degree = models.ForeignKey(Degree, on_delete=models.CASCADE, null=True)
 
 
@@ -86,7 +86,7 @@ class OfficialContact(models.Model):
     """Model to store official college contacts."""
 
     college = models.ForeignKey(College, on_delete=models.CASCADE)
-    phone = models.CharField(max_length=20, null=True)
-    email = models.CharField(max_length=40, null=True)
-    full_name = models.CharField(max_length=100)
-    designation = models.CharField(max_length=50)
+    phone = models.CharField(null=True, max_length=20)
+    email = models.CharField(null=True, max_length=40)
+    full_name = models.CharField(null=True, max_length=100)
+    designation = models.CharField(null=True, max_length=50)

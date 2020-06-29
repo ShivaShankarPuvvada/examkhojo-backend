@@ -42,21 +42,21 @@ class Course(models.Model):
         PAPER = 'PP'
         OTHER = 'OT'
 
-    full_name = models.CharField(max_length=200)
-    abbreviated_name = models.CharField(max_length=200)
+    full_name = models.CharField(null=True, max_length=200)
+    abbreviated_name = models.CharField(null=True, max_length=200)
     meta = models.TextField(null=True)
     keywords = models.TextField(null=True)
-    stream = models.IntegerField(choices=StreamChoices.choices)
-    level = models.CharField(max_length=5, choices=LevelType.choices)
+    stream = models.IntegerField(null=True, choices=StreamChoices.choices)
+    level = models.CharField(null=True, max_length=5, choices=LevelType.choices)
     duration = models.IntegerField(null=True)
-    eligibility = models.IntegerField(choices=BasicEligibilityChoices.choices)
-    exam = models.CharField(max_length=3, choices=ExaminationType.choices)
-    average_course_fee = models.DecimalField(max_digits=20, decimal_places=5)
+    eligibility = models.IntegerField(null=True, choices=BasicEligibilityChoices.choices)
+    exam = models.CharField(null=True, max_length=3, choices=ExaminationType.choices)
+    average_course_fee = models.DecimalField(null=True, max_digits=20, decimal_places=5)
     about = models.TextField(null=True)
     syllabus_csv = models.TextField(null=True) #CSV field
     top_companies = models.TextField(null=True) #CSV field
-    slug = models.SlugField(max_length=50)
-    is_top = models.BooleanField(default=False)
+    slug = models.SlugField(null=True, max_length=50)
+    is_top = models.BooleanField(null=True, default=False)
     quick_facts = models.TextField(null=True)
     range = models.TextField(null=True)
 
@@ -69,7 +69,7 @@ class Course(models.Model):
 class Job(models.Model):
     """Jobs available in industry."""
 
-    name = models.CharField(max_length=100)
+    name = models.CharField(null=True, max_length=100)
 
 
 class CourseJob(models.Model):
@@ -82,8 +82,8 @@ class CourseJob(models.Model):
 class FAQCourse(models.Model):
     """FAQ model for every course."""
 
-    question = models.TextField()
-    answers = models.TextField()
+    question = models.TextField(null=True )
+    answers = models.TextField(null=True )
 
 
 class FAQLinkCourse(models.Model):
