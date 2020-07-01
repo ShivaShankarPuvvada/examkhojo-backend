@@ -48,7 +48,7 @@ class Course(models.Model):
     keywords = models.TextField(null=True)
     stream = models.IntegerField(null=True, choices=StreamChoices.choices)
     level = models.CharField(null=True, max_length=5, choices=LevelType.choices)
-    duration = models.IntegerField(null=True)
+    duration = models.CharField(null=True, max_length=100)
     eligibility = models.IntegerField(null=True, choices=BasicEligibilityChoices.choices)
     exam = models.CharField(null=True, max_length=3, choices=ExaminationType.choices)
     average_course_fee = models.CharField(null=True, max_length=20)
