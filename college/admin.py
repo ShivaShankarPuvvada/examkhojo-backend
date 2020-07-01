@@ -5,7 +5,16 @@ from college.models import *
 
 admin.site.site_header = 'ExamKhojo'
 
-admin.site.register(College)
+
+class GalleryAdmin(admin.TabularInline):
+    model = Gallery
+
+
+class CollegeAdmin(admin.ModelAdmin):
+    inlines = [GalleryAdmin, ]
+
+
+admin.site.register(CollegeAdmin)
 admin.site.register(Gallery)
 admin.site.register(EntranceExam)
 admin.site.register(Degree)
