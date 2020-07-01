@@ -36,7 +36,6 @@ class College(models.Model):
     slug = models.SlugField(null=True, max_length=50)
     about = models.TextField(null=True)
     is_top = models.BooleanField(null=True, default=False)
-    quick_facts = models.TextField(null=True)
     admission_process = models.TextField(null=True)
     placements = models.TextField(null=True)
     degrees = models.TextField(null=True) #CSV field

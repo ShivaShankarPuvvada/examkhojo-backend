@@ -58,8 +58,6 @@ class Course(models.Model):
     jobs = models.TextField(null=True) #CSV field
     slug = models.SlugField(null=True, max_length=50)
     is_top = models.BooleanField(null=True, default=False)
-    quick_facts = models.TextField(null=True)
-    range = models.TextField(null=True)
 
     def save(self, *args, **kwargs):
         if not self.slug:
