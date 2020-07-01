@@ -32,13 +32,15 @@ class College(models.Model):
     ownership = models.IntegerField(null=True, choices=OwnershipChoices.choices)
     approval = models.CharField(null=True, max_length=100)
     college_type = models.IntegerField(null=True, choices=InstitutionType.choices)
-    date_of_establishment = models.DateField(null=True)
+    established_year = models.CharField(null=True, max_length=100)
     slug = models.SlugField(null=True, max_length=50)
     about = models.TextField(null=True)
     is_top = models.BooleanField(null=True, default=False)
     quick_facts = models.TextField(null=True)
     admission_process = models.TextField(null=True)
     placements = models.TextField(null=True)
+    degrees = models.TextField(null=True) #CSV field
+    streams = models.TextField(null=True) #CSV field
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -90,3 +92,13 @@ class OfficialContact(models.Model):
     email = models.CharField(null=True, max_length=40)
     full_name = models.CharField(null=True, max_length=100)
     designation = models.CharField(null=True, max_length=50)
+
+
+class Gallery(models.Model):
+    """Model to store images of colleges."""
+
+    college = models.ForeignKey(College, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='college/gallery/')
+
+    def __str__(self):
+        return self.college

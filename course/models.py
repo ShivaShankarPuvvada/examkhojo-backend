@@ -51,10 +51,11 @@ class Course(models.Model):
     duration = models.IntegerField(null=True)
     eligibility = models.IntegerField(null=True, choices=BasicEligibilityChoices.choices)
     exam = models.CharField(null=True, max_length=3, choices=ExaminationType.choices)
-    average_course_fee = models.DecimalField(null=True, max_digits=20, decimal_places=5)
+    average_course_fee = models.CharField(null=True, max_length=20)
     about = models.TextField(null=True)
     syllabus_csv = models.TextField(null=True) #CSV field
     top_companies = models.TextField(null=True) #CSV field
+    jobs = models.TextField(null=True) #CSV field
     slug = models.SlugField(null=True, max_length=50)
     is_top = models.BooleanField(null=True, default=False)
     quick_facts = models.TextField(null=True)
