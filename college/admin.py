@@ -14,7 +14,7 @@ class CollegeAdmin(admin.ModelAdmin):
     inlines = [GalleryAdmin, ]
 
 
-admin.site.register(CollegeAdmin)
+admin.site.register(College, CollegeAdmin)
 admin.site.register(Gallery)
 admin.site.register(EntranceExam)
 admin.site.register(Degree)
