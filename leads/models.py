@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+from usermodule.models import Profile
+
+
+class Lead(models.Model):
+    """Leads or interested persons."""
+
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE, null=True)
