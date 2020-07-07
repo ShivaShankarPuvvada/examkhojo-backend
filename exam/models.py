@@ -25,6 +25,7 @@ class Exam(models.Model):
     abbreviated_name = models.CharField(null=True, max_length=200)
     meta = models.TextField(null=True)
     keywords = models.TextField(null=True)
+    application_fee = models.CharField(null=True, blank=True, max_length=200)
     conducting_body_full_name = models.CharField(null=True, max_length=200)
     conducting_body_abbreviated_name = models.CharField(null=True, max_length=200)
     official_website = models.CharField(null=True, max_length=200)
