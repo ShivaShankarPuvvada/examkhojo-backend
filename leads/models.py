@@ -2,6 +2,8 @@ from django.db import models
 
 from usermodule.models import Profile
 
+from django.utils.translation import gettext_lazy as _
+
 
 class Lead(models.Model):
     """Leads or interested persons."""
