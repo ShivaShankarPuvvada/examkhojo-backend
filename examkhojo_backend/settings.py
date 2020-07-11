@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'college',
     'course',
     'exam',
+    'leads',
     'usermodule'
 ]
 
