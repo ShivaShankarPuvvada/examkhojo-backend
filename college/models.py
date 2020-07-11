@@ -41,6 +41,9 @@ class College(models.Model):
     degrees = models.TextField(null=True) #CSV field
     streams = models.TextField(null=True) #CSV field
 
+    def __str__(self):
+        return '{}, {}'.format(self.abbreviated_name, self.city)
+
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.full_name)
